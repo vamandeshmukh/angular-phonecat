@@ -1,14 +1,28 @@
 <!doctype html>
-<html lang="en" ng-app>
-  <head>
-    <meta charset="utf-8">
-    <title>My HTML File</title>
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-    <script src="lib/angular/angular.js"></script>
-  </head>
-  <body>
+<html lang="en" ng-app="phonecatApp">
 
-    <p>Nothing here {{'yet' + '!'}}</p>
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="app.css" />
+  <script src="lib/angular/angular.js"></script>
+  <script src="app.js"></script>
+</head>
 
-  </body>
+<body ng-controller="PhoneListController">
+
+  <ul>
+    <li ng-repeat="phone in phones">
+      <span>{{phone.name}}</span>
+      <p>{{phone.snippet}}</p>
+    </li>
+  </ul>
+  <p> {{myName}} </p>
+  <p> {{ empData.firstName }} </p>
+  <p> Sonu's primary phone number: {{ empData.phones[0]}}</p>
+
+
+</body>
+
 </html>
