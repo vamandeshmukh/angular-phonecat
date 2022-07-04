@@ -1,10 +1,12 @@
-'use strict';
 
+
+'use strict';
 // Register `phoneList` component, along with its associated controller and template
 angular.
     module('phoneList').
     component('phoneList', {
         templateUrl: 'phone-list/phone-list.template.html',
+        // template: "<p>some {{ 10 + 10 }} html<p>",
         controller: function PhoneListController() {
             this.phones = [
                 {
