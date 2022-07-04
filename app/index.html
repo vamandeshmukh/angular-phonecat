@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="app.css" />
   <script src="lib/angular/angular.js"></script>
   <script src="app.js"></script>
+  <script src="app.module.js"></script>
+  <script src="phone-list/phone-list.module.js"></script>
+  <script src="phone-list/phone-list.component.js"></script>
 </head>
 
 <body ng-controller="PhoneListController">
@@ -18,10 +21,6 @@
       <p>{{abc.snippet}}</p>
     </li>
   </ul>
-
-  <p> {{myName}} </p>
-  <p> {{ empData.firstName }} </p>
-  <p> Sonu's primary phone number: {{ empData.phones[0]}}</p>
 
 
 </body>
