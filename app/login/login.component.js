@@ -6,7 +6,8 @@ angular.
     component('login', {
         templateUrl: 'login/login.template.html',
         controller: function LoginController() {
-            this.loginDetails = {
+            this.message = "Welcome to login page!";
+            this.credentials = {
                 userName: '',
                 password: '',
                 confirmPassword: ''
