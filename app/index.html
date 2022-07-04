@@ -13,11 +13,12 @@
 <body ng-controller="PhoneListController">
 
   <ul>
-    <li ng-repeat="phone in phones">
-      <span>{{phone.name}}</span>
-      <p>{{phone.snippet}}</p>
+    <li ng-repeat="abc in phones">
+      <span>{{abc.name}}</span>
+      <p>{{abc.snippet}}</p>
     </li>
   </ul>
+
   <p> {{myName}} </p>
   <p> {{ empData.firstName }} </p>
   <p> Sonu's primary phone number: {{ empData.phones[0]}}</p>
