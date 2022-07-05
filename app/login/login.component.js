@@ -6,15 +6,20 @@ angular.
     component('login', {
         templateUrl: 'login/login.template.html',
         controller: function LoginController($scope, $http) {
+
             $scope.credentials = {
                 userName: '',
                 password: ''
             };
+
             $scope.login = () => {
-                $http.post('app-data/app-users.json', $scope.credentials)
-                    .then(() => {
-                        alert(`login successful for ${$scope.credentials.userName}!`);
-                    })
+                $http.post('https://jsonplaceholder.typicode.com/users', $scope.credentials).
+                    then(
+                        (response) => {
+                        console.log(response.data);
+                        alert(`login successful for ${response.data.userName}!`);
+                    }
+                    );
             }
         }
     });
