@@ -7,7 +7,9 @@
   "license": "MIT",
   "dependencies": {
     "angular": "1.8.x",
-    "bootstrap": "4.6.0"
+    "bootstrap": "4.6.0",
+    "jquery": "2.1.1",
+    "angular-route": "1.8.x"
   },
   "devDependencies": {
     "angular-mocks": "1.8.x",
