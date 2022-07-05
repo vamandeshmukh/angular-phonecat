@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Google Phone Gallery</title>
+  <title>Deloitte AngularJS App</title>
+
+  <link rel="icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/DeloitteNewSmall.png/220px-DeloitteNewSmall.png">
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="app.css" />
   <script src="lib/angular/angular.js"></script>
@@ -24,14 +27,15 @@
 
 <body class="bg-light">
 
-  <!-- <p class="text-primary display-1">HTML</p>
-  <p>Some HTML</p>
-  <p>Some more HTML</p>
-  <p>Yet some more HTML</p> -->
-
   <header></header>
-  <div ng-view></div>
-
+  <div style="min-height: 79vh;">
+    <div ng-view></div>
+  </div>
+  <div>
+    <div class="bg-dark text-muted text-center pb-3 pt-3">
+      <p>&#169; Deloitte 2022</p>
+    </div>
+  </div>
 </body>
 
 </html>
