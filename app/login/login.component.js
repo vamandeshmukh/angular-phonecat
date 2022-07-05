@@ -15,7 +15,6 @@ angular.
             $scope.login = () => {
                 alert(`login successful for ${$scope.credentials.userName}!`);
             }
-
         }
     });
 
