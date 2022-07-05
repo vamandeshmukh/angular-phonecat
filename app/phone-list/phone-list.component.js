@@ -13,6 +13,8 @@ angular.
             // syntax 
             // $http.get('reqtest url') .then( 'process the response') .catch('error');
 
+            // also, axios in Angular 
+
             $http.get('phones/phones.json').then(function (response) {
                 // console.log(response.data);
                 self.phones = response.data;

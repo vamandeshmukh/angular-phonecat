@@ -5,14 +5,16 @@ angular.
     module('login').
     component('login', {
         templateUrl: 'login/login.template.html',
-        controller: function LoginController($scope) {
+        controller: function LoginController($scope, $http) {
             $scope.credentials = {
                 userName: '',
-                password: '',
-                confirmPassword: ''
+                password: ''
             };
             $scope.login = () => {
-                alert(`login successful for ${$scope.credentials.userName}!`);
+                $http.post('app-data/app-users.json', $scope.credentials)
+                    .then(() => {
+                        alert(`login successful for ${$scope.credentials.userName}!`);
+                    })
             }
         }
     });

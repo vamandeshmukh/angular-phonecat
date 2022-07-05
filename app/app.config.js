@@ -5,6 +5,9 @@ angular.
     config(['$routeProvider',
         function config($routeProvider) {
             $routeProvider.
+                when('/home', {
+                    template: '<home></home>'
+                }).
                 when('/phones', {
                     template: '<phone-list></phone-list>'
                 }).
