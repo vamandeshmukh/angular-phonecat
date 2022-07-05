@@ -8,8 +8,11 @@ angular.
                 when('/phones', {
                     template: '<phone-list></phone-list>'
                 }).
-                when('/phones/:phoneId', {
-                    template: '<phone-detail></phone-detail>'
+                when('/login', {
+                    template: '<login></login>'
+                }).
+                when('/header', {
+                    template: '<header></header>'
                 }).
                 otherwise('/phones');
         }
