@@ -1,12 +1,15 @@
 'use strict';
 
-// Define the `phonecatApp` module
-angular.module('phonecatApp', [
-  'ngRoute',
-  'phoneList',
-  'login',
-  'header'
-]);
+angular.module('phonecatApp',
+  [
+    'ngRoute',
+    'phoneList',
+    'login',
+    'header'
+  ]);
+
+
+
 // 'use strict';
 
 // // Define the `phonecatApp` module
