@@ -6,7 +6,8 @@ angular.module('phonecatApp',
     'phoneList',
     'login',
     'header',
-    'register'
+    'register',
+    'home'
   ]);
 
 

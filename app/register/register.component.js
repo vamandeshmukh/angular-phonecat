@@ -4,8 +4,8 @@
 angular.
     module('register').
     component('register', {
-        templateUrl: 'regist/regist.template.html',
-        controller: function RegistController($scope) {
+        templateUrl: 'register/register.template.html',
+        controller: function RegisterController($scope) {
             $scope.message = "Welcome to register!";
         }
     });
