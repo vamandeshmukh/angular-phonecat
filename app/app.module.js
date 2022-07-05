@@ -5,7 +5,8 @@ angular.module('phonecatApp',
     'ngRoute',
     'phoneList',
     'login',
-    'header'
+    'header',
+    'register'
   ]);
 
 

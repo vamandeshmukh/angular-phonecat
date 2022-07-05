@@ -14,6 +14,9 @@ angular.
                 when('/header', {
                     template: '<header></header>'
                 }).
+                when('/register', {
+                    template: '<register></register>'
+                }).
                 otherwise('/phones');
         }
     ]);
