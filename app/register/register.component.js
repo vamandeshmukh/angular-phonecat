@@ -5,7 +5,7 @@ angular.
     module('register').
     component('register', {
         templateUrl: 'register/register.template.html',
-        controller: function RegisterController($scope, $http) {
+        controller: function RegisterController($scope, $http, $rootScope) {
 
             $scope.credentials = {
                 userId: '',
@@ -19,6 +19,7 @@ angular.
                         (response) => {
                             console.log(response.data);
                             alert(`Registration successful for ${response.data.userName}!`);
+                            $rootScope.loginStatus = false;
                             $scope.credentials = {
                                 userId: '',
                                 userName: '',
