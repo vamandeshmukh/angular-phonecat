@@ -6,7 +6,6 @@ angular.
     component('login', {
         templateUrl: 'login/login.template.html',
         controller: function LoginController($scope) {
-            $scope.message = "Welcome to login page!";
             $scope.credentials = {
                 userName: '',
                 password: '',
